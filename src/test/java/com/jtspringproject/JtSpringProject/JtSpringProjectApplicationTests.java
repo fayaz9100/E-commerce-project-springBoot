@@ -11,7 +11,18 @@ public class JtSpringProjectApplication extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(JtSpringProjectApplication.class);
+        return applicationpackage com.jtspringproject.JtSpringProject;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class JtSpringProjectApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+}.sources(JtSpringProjectApplication.class);
     }
 
     public static void main(String[] args) {
